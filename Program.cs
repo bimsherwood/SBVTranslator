@@ -14,6 +14,7 @@ namespace SBVTranslator {
             var error = options.Errors();
             if(error != null){
                 Console.WriteLine(error);
+                return;
             }
             
             // Translate subtitles
