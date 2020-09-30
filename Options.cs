@@ -25,6 +25,8 @@ namespace SBVTranslator {
         
         // Returns null if there are no errors
         public string Errors() {
+            if(this.InputFile == null)
+                return "You must provide an 'InputFile'.";
             if(this.TranslateId == null)
                 return "You must provide 'TranslateID': An AWS account"
                     + " ID for accessing the AWS Translation services.";

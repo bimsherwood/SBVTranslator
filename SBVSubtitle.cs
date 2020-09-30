@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace SBVTranslator {
     class SBVSubtitle {
         
-        private const string TimeSpanFormat = "hhmmss\\.fff";
+        private const string TimeSpanFormat = @"hh\:mm\:ss\.fff";
         
         public TimeSpan Start { get; set; }
         public TimeSpan End { get; set; }
